@@ -1,11 +1,8 @@
 <?php
 $host = 'localhost';
-$dbname = 'qcydeser_exalumnos_lhs';
-$user = 'qcydeser_admin';
-$password = '1hs.1906.cma';
-#$dbname = 'exalumnos';
-#$user = 'root';
-#$password = '';
+$dbname = 'exalumnos_lhs';
+$user = 'root';
+$password = '';
 
 
 try {
