@@ -1,0 +1,213 @@
+/* Reset de márgenes y tamaños */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor de toda la página con la imagen de fondo */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/background1.avif'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Cuadro del formulario de login */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido */
+}
+
+.login-box h2 {
+    color: #0a4772;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botón genérico */
+button {
+    background-color: #0a4772;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7c9cb4;
+}
+
+/* Estilo específico para el botón de registro */
+button.btn-registro {
+    background-color: cornflowerblue;
+}
+
+button.btn-registro:hover {
+    background-color: #3b76b5;
+}
+
+/* Estilo específico para el botón de login */
+button.btn-login {
+    color:#0a4772;
+    background-color: #FFD700;  /* Amarillo */
+}
+
+button.btn-login:hover {
+    background-color: #FFC107;  /* Amarillo oscuro */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: #0a4772;
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    color: black; /* Cambia a negro al pasar el mouse */
+    text-decoration: none; /* No subrayar al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%; /* Se ajusta el tamaño en pantallas pequeñas */
+    }
+}
+
+/* Redes sociales y políticas de privacidad */
+.social-section {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Asegura que se quede debajo del form */
+}
+
+/* Contenedor de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los iconos sociales */
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white; /* Fondo blanco para resaltar los iconos negros */
+    background-size: 80%; /* Ajustar el tamaño del icono dentro del círculo */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Icono de YouTube */
+.social-icon.youtube {
+    background-image: url('/exalumnos/assets/img/youtube.avif'); /* Asegúrate de que esta ruta sea correcta */
+}
+
+/* Icono de Flickr */
+.social-icon.flickr {
+    background-image: url('/exalumnos/assets/img/flickr.avif'); /* Asegúrate de que esta ruta sea correcta */
+}
+
+/* Icono de Facebook */
+.social-icon.facebook {
+    background-image: url('/exalumnos/assets/img/facebook.avif'); /* Asegúrate de que esta ruta sea correcta */
+}
+
+/* Icono de Instagram */
+.social-icon.instagram {
+    background-image: url('/exalumnos/assets/img/instagram.avif'); /* Asegúrate de que esta ruta sea correcta */
+}
+.social-icon.linkedin {
+    background-image: url('/exalumnos/assets/img/linkedin.avif'); /* Asegúrate de que esta ruta sea correcta */
+}
+
+
+/* Estilo del enlace de "Políticas de Privacidad" */
+.privacy-policy {
+    font-size: 14px;
+}
+
+.privacy-policy a {
+    color: #555;
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+/* Botón de WhatsApp */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width:  50px; /* Tamaño del icono dentro del botón */
+    height: 50px;
+}
+
+.whatsapp-icon:hover {
+    background-color: #20b957; /* Color ligeramente más oscuro en hover */
+    transition: background-color 0.3s;
+}
